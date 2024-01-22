@@ -1,19 +1,48 @@
+@font-face {
+    font-family: viking-style;
+    src: url(media/Norse-Bold.otf);
+}
+
 body {
-    background-color: lightgray;
+    font-family: sans-serif;
     display: flex;
+    margin: 0;
+    padding: 0;
+    height: 1200px;
 }
 
 .background_side {
-   min-width: 34%;
+    min-width: 34%;
+}
+
+.background_image {
+    width: 100%;
+    height: 100%;
 }
 
 .form_side {
-  max-width: 66%;  
+    max-width: 66%;
+    display: flex;
+    flex-direction: column;
 }
 
 .form_info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: white;
+    height: 400px;
+}
+
+.top_section {
+    background-color: lightgray;
+    height: 400px;
+}
+
+.submit_button,
+.bottom_section {
+    background-color: lightgray;
+}
+
+.bottom_section {
+    height: 400px;
 }

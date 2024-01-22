@@ -6,29 +6,34 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="background_side">
-        BACKGROUND
+        <img class="background_image" src="media/background.jpg">
     </div>
 
     <div class="form_side">
-        <div>
+        <div class="top_section">
             This is not a real online service! You know you need 
             something like this in your life to help you realize 
             your deepest dreams. Sign up <i>now</i> to get started.
             <p>You <i>know</i> you want to.</p>
         </div>
 
+        <div class="form_heading">
+            Let's do this!
+        </div>
+
         <form action="test.com" method="post">
             <div class="form_info">
                 <div>
                     <label for="first_name">First Name:</label>
-                    <input type="text" id="first_name" placeholder="Thor">
+                    <input type="text" id="first_name">
                 </div>
     
                 <div>
                     <label for="last_name">Last Name:</label>
-                    <input type="text" id="last_name" placeholder="Odinson">
+                    <input type="text" id="last_name">
                 </div>
     
                 <div>
@@ -52,10 +57,13 @@
                 </div>
             </div>
 
-            <div>
+            <div class="submit_button">
                 <button type="submit">Create Account</button>
             </div>
         </form>
+        <div class="bottom_section">
+            Already have an account? Log in
+        </div>
     </div>
 </body>
 </html>
