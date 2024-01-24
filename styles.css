@@ -60,23 +60,49 @@ body {
     flex-direction: column;
 }
 
-.form_info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 400px;
-}
-
 .top_section {
     background-color: lightgray;
     height: 400px;
+    padding: 0 5%;
 }
 
-.submit_button,
-.bottom_section {
-    background-color: lightgray;
+.top_section_text {
+    padding-top: 10%;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.middle_section {
+    height: 400px;
+    box-shadow: 0 -5px .5em gray inset;
+}
+
+h2 {
+    padding-left: 5%;
+}
+
+form {
+    padding-left: 5%;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    font-size: 20px;
+    position: absolute;
+    top: 65%;
 }
 
 .bottom_section {
     height: 400px;
+    background-color: lightgray;
+    padding: 0 5%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.bottom_section_text {
+    padding-top: 10%;
 }
