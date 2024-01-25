@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src = "scripts.js" defer></script>
 </head>
 
 <body>
@@ -29,39 +30,41 @@
         </div>
 
         <div class="middle_section">
-            <h2>Let's do this!</h2>
-            <form action="test.com" method="post">
-                   <fieldset>
-                        <label for="first_name">First Name:</label>
+            <h1>Let's do this!</h1>
+            <form action="submitted.html" onsubmit="return checkPassword()" method="post">
+                    <div class="form_boxes">
+                        <label for="first_name">FIRST NAME:</label>
                         <input type="text" id="first_name">
-                   
-                        <label for="last_name">Last Name:</label>
+                    </div>
+                    <div class="form_boxes">
+                        <label for="last_name">LAST NAME:</label>
                         <input type="text" id="last_name">
-                    </fieldset>
+                    </div>
                     
-                    <fieldset>
-                        <label for="email">Email:</label>
+                    <div class="form_boxes">
+                        <label for="email">EMAIL:</label>
                         <input type="email" id="email" placeholder="example@gmail.com">        
-                   
-                        <label for="phone">Phone Number:</label>
+                    </div>
+                    <div class="form_boxes">
+                        <label for="phone">PHONE NUMBER:</label>
                         <input type="number" id="phone" placeholder="(999) 123-4567">
-                    </fieldset>
+                    </div>
                     
-                    <fieldset>
-                        <label for="password">Password:</label>
+                    <div class="form_boxes" id="password_box">
+                        <label for="password">PASSWORD:</label>
                         <input type="password" id="password">
-                       
-                        <label for="confirm_password">Confirm Password:</label>
+                    </div>
+                    <div class="form_boxes">   
+                        <label for="confirm_password">CONFIRM PASSWORD:</label>
                         <input type="password" id="confirm_password">
-                    </fieldset>                 
-
-                    <button type="submit">Create Account</button>
+                    </div>               
+                <button type="submit">Create Account</button>
             </form>
         </div>
 
         <div class="bottom_section">
             <div class="bottom_section_text">
-                Already have an account? Log in
+                Already have an account? <a href="login.html">Log in</a>
                 </div>
         </div>
     </div>
